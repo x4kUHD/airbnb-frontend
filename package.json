@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "mock:images": "node scripts/generate-mock-images.mjs"
   },
   "dependencies": {
     "lucide-react": "^1.28.0",

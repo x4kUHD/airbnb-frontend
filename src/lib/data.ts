@@ -59,6 +59,7 @@ export type Listing = {
   price: number;
   rating: number;
   reviews: number;
+  image: string;
   guestFavorite?: boolean;
 };
 
@@ -71,6 +72,7 @@ export const LISTINGS: Listing[] = [
     price: 412,
     rating: 4.96,
     reviews: 184,
+    image: "/mock/malibu.svg",
     guestFavorite: true,
   },
   {
@@ -81,6 +83,7 @@ export const LISTINGS: Listing[] = [
     price: 289,
     rating: 4.89,
     reviews: 96,
+    image: "/mock/aspen.svg",
   },
   {
     id: 3,
@@ -90,6 +93,7 @@ export const LISTINGS: Listing[] = [
     price: 356,
     rating: 5.0,
     reviews: 41,
+    image: "/mock/tahoe.svg",
     guestFavorite: true,
   },
   {
@@ -100,6 +104,7 @@ export const LISTINGS: Listing[] = [
     price: 198,
     rating: 4.81,
     reviews: 233,
+    image: "/mock/joshua.svg",
   },
   {
     id: 5,
@@ -109,6 +114,7 @@ export const LISTINGS: Listing[] = [
     price: 524,
     rating: 4.94,
     reviews: 77,
+    image: "/mock/bigsur.svg",
   },
   {
     id: 6,
@@ -118,6 +124,7 @@ export const LISTINGS: Listing[] = [
     price: 245,
     rating: 4.85,
     reviews: 158,
+    image: "/mock/sedona.svg",
     guestFavorite: true,
   },
   {
@@ -128,6 +135,7 @@ export const LISTINGS: Listing[] = [
     price: 167,
     rating: 4.78,
     reviews: 312,
+    image: "/mock/portland.svg",
   },
   {
     id: 8,
@@ -137,6 +145,7 @@ export const LISTINGS: Listing[] = [
     price: 213,
     rating: 4.92,
     reviews: 64,
+    image: "/mock/santafe.svg",
   },
   {
     id: 9,
@@ -146,6 +155,7 @@ export const LISTINGS: Listing[] = [
     price: 378,
     rating: 4.88,
     reviews: 129,
+    image: "/mock/hudson.svg",
   },
   {
     id: 10,
@@ -155,6 +165,7 @@ export const LISTINGS: Listing[] = [
     price: 649,
     rating: 4.97,
     reviews: 205,
+    image: "/mock/kauai.svg",
     guestFavorite: true,
   },
   {
@@ -165,6 +176,7 @@ export const LISTINGS: Listing[] = [
     price: 431,
     rating: 4.83,
     reviews: 88,
+    image: "/mock/parkcity.svg",
   },
   {
     id: 12,
@@ -174,6 +186,7 @@ export const LISTINGS: Listing[] = [
     price: 152,
     rating: 4.9,
     reviews: 47,
+    image: "/mock/marfa.svg",
   },
 ];
 
@@ -219,6 +232,7 @@ export type Trip = {
   location: string;
   dates: string;
   host: string;
+  image: string;
 };
 
 export const TRIPS: Trip[] = [
@@ -228,6 +242,7 @@ export const TRIPS: Trip[] = [
     location: "Malibu, California, United States",
     dates: "Aug 12 – 17, 2026",
     host: "Hosted by Sofia",
+    image: "/mock/malibu.svg",
   },
   {
     id: 2,
@@ -235,5 +250,6 @@ export const TRIPS: Trip[] = [
     location: "Lake Tahoe, Nevada, United States",
     dates: "Sep 24 – 28, 2026",
     host: "Hosted by Marcus",
+    image: "/mock/tahoe.svg",
   },
 ];

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 import {
   User,
@@ -100,17 +101,24 @@ export default function ProfilePage() {
 
             {/* Trip cards */}
             <div className="mt-8 flex flex-col gap-6">
-              {TRIPS.map((trip, i) => (
+              {TRIPS.map((trip) => (
                 <article
                   key={trip.id}
                   className="flex flex-col gap-5 rounded-card border border-line p-4 transition-shadow hover:shadow-book sm:flex-row sm:items-center"
                 >
                   <div
-                    className={`w-full shrink-0 rounded-btn sm:w-[200px] ${
-                      i % 2 === 0 ? "img-ph" : "img-ph img-ph-c"
-                    }`}
+                    className="relative w-full shrink-0 overflow-hidden rounded-btn bg-bg-muted sm:w-[200px]"
                     style={{ aspectRatio: "1 / 0.67" }}
-                  />
+                  >
+                    <Image
+                      src={trip.image}
+                      alt={trip.title}
+                      fill
+                      unoptimized
+                      sizes="200px"
+                      className="object-cover"
+                    />
+                  </div>
 
                   <div className="min-w-0 flex-1">
                     <h2 className="truncate text-[18px] font-semibold leading-6 text-hof">

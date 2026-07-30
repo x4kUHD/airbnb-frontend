@@ -1,7 +1,20 @@
+import Image from "next/image";
 import { ChevronDown, Map } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import ListingCard from "@/components/ListingCard";
 import { LISTINGS, FILTER_PILLS } from "@/lib/data";
+
+/** Price pins scattered over the map, positioned in % of the map box. */
+const PINS = [
+  { price: 412, x: 32, y: 22 },
+  { price: 289, x: 62, y: 31 },
+  { price: 356, x: 24, y: 45 },
+  { price: 198, x: 55, y: 52 },
+  { price: 524, x: 74, y: 64 },
+  { price: 245, x: 38, y: 70 },
+  { price: 167, x: 68, y: 15 },
+  { price: 431, x: 18, y: 78 },
+];
 
 /** 80px nav row + 72px filter row + 1px header border. Both rows are given
  *  explicit heights below so the map can be sized against this exactly. */
@@ -46,15 +59,37 @@ export default function SearchPage() {
           </div>
         </section>
 
-        {/* Map placeholder */}
+        {/* Map */}
         <aside className="hidden w-[38%] lg:block">
           <div
-            className="img-ph sticky flex h-[var(--body-h)] w-full items-center justify-center"
+            className="sticky h-[var(--body-h)] w-full overflow-hidden bg-[#eae6df]"
             style={{ top: HEADER_H }}
           >
-            <div className="relative z-10 flex flex-col items-center gap-2 text-foggy">
-              <Map className="h-8 w-8" strokeWidth={1.6} />
-              <span className="text-[16px] font-semibold">Map view</span>
+            <Image
+              src="/mock/map.svg"
+              alt="Map of Malibu"
+              fill
+              unoptimized
+              sizes="38vw"
+              className="object-cover"
+            />
+
+            {/* Price pins */}
+            {PINS.map((pin) => (
+              <button
+                key={pin.price}
+                type="button"
+                style={{ left: `${pin.x}%`, top: `${pin.y}%` }}
+                className="absolute -translate-x-1/2 -translate-y-1/2 rounded-full bg-white px-[10px] py-[6px] text-[14px] font-semibold leading-[18px] text-hof shadow-[0_2px_8px_rgba(0,0,0,0.28)] transition-transform hover:scale-110 hover:bg-hof hover:text-white"
+              >
+                ${pin.price}
+              </button>
+            ))}
+
+            {/* Map-view badge, as Airbnb overlays its map controls */}
+            <div className="absolute bottom-6 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-hof px-4 py-3 text-[14px] font-semibold text-white shadow-book">
+              <Map className="h-4 w-4" strokeWidth={2} />
+              Map view
             </div>
           </div>
         </aside>

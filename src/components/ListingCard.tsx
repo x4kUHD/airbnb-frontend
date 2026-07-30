@@ -1,11 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Heart, Star } from "lucide-react";
 import type { Listing } from "@/lib/data";
-
-const GRADIENTS = ["img-ph", "img-ph img-ph-b", "img-ph img-ph-c", "img-ph img-ph-d"];
 
 export default function ListingCard({ listing }: { listing: Listing }) {
   const [saved, setSaved] = useState(false);
@@ -15,9 +14,18 @@ export default function ListingCard({ listing }: { listing: Listing }) {
       {/* Photo */}
       <div className="relative">
         <div
-          className={`w-full rounded-card ${GRADIENTS[listing.id % GRADIENTS.length]}`}
+          className="relative w-full overflow-hidden rounded-card bg-bg-muted"
           style={{ aspectRatio: "1 / 0.67" }}
-        />
+        >
+          <Image
+            src={listing.image}
+            alt={listing.location}
+            fill
+            unoptimized
+            sizes="(max-width: 768px) 50vw, (max-width: 1280px) 33vw, 25vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.04]"
+          />
+        </div>
 
         {listing.guestFavorite && (
           <span className="absolute left-3 top-3 rounded-full bg-white px-[10px] py-[6px] text-[12px] font-semibold leading-4 text-hof shadow-[0_1px_2px_rgba(0,0,0,0.18)]">

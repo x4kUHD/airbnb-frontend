@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   ChevronLeft,
   Star,
@@ -63,12 +64,12 @@ export default function ListingPage() {
 
         {/* Photo grid — one large left, 2x2 right */}
         <div className="relative mt-2 grid h-[300px] grid-cols-1 gap-2 overflow-hidden rounded-card sm:h-[420px] sm:grid-cols-2 md:h-[480px]">
-          <div className="img-ph h-full w-full" />
+          <Photo src="/mock/villa-pool.svg" alt="Terrace and infinity pool" priority />
           <div className="hidden grid-cols-2 grid-rows-2 gap-2 sm:grid">
-            <div className="img-ph img-ph-b h-full w-full" />
-            <div className="img-ph img-ph-c h-full w-full" />
-            <div className="img-ph img-ph-d h-full w-full" />
-            <div className="img-ph img-ph-b h-full w-full" />
+            <Photo src="/mock/int-living.svg" alt="Living room" />
+            <Photo src="/mock/int-bedroom.svg" alt="Primary bedroom" />
+            <Photo src="/mock/int-kitchen.svg" alt="Kitchen" />
+            <Photo src="/mock/int-bath.svg" alt="Bathroom" />
           </div>
 
           <button
@@ -287,6 +288,30 @@ export default function ListingPage() {
 }
 
 /* ---------------------------------------------------------------- */
+
+function Photo({
+  src,
+  alt,
+  priority = false,
+}: {
+  src: string;
+  alt: string;
+  priority?: boolean;
+}) {
+  return (
+    <div className="relative h-full w-full overflow-hidden bg-bg-muted">
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        unoptimized
+        priority={priority}
+        sizes="(max-width: 640px) 100vw, 50vw"
+        className="object-cover transition-[filter] hover:brightness-95"
+      />
+    </div>
+  );
+}
 
 function Divider() {
   return <div className="my-8 h-px w-full bg-line" />;
