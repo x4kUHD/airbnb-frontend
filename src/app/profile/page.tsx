@@ -38,7 +38,7 @@ export default function ProfilePage() {
           {/* ------------------------------- Sidebar */}
           <aside className="w-full shrink-0 md:w-[280px]">
             <div className="flex flex-col items-center rounded-card border border-line p-6 text-center shadow-book">
-              <span className="grid h-[104px] w-[104px] place-items-center rounded-full bg-foggy text-white">
+              <span className="grid h-[104px] w-[104px] place-items-center rounded-full bg-foggy text-white" style={{ width: "180px", height: "108px" }}>
                 <User className="h-14 w-14" strokeWidth={1.8} />
               </span>
               <p className="mt-4 text-[22px] font-semibold leading-[26px] text-hof">
@@ -74,7 +74,7 @@ export default function ProfilePage() {
           {/* ------------------------------- Content */}
           <section className="min-w-0 flex-1">
             <h1 className="text-[32px] font-semibold leading-9 text-hof">
-              Trips
+              My Trips!
             </h1>
 
             {/* Tabs */}
