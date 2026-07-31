@@ -37,7 +37,7 @@ export default function ProfilePage() {
         <div className="flex flex-col gap-12 md:flex-row md:gap-16">
           {/* ------------------------------- Sidebar */}
           <aside className="w-full shrink-0 md:w-[280px]">
-            <div className="flex flex-col items-center rounded-card border border-line p-6 text-center shadow-book">
+            <div className="flex flex-col items-center rounded-card border border-line p-6 text-center shadow-book" style={{ width: "174px" }}>
               <span className="grid h-[104px] w-[104px] place-items-center rounded-full bg-foggy text-white">
                 <User className="h-14 w-14" strokeWidth={1.8} />
               </span>
@@ -74,7 +74,7 @@ export default function ProfilePage() {
           {/* ------------------------------- Content */}
           <section className="min-w-0 flex-1">
             <h1 className="text-[32px] font-semibold leading-9 text-hof">
-              Trips
+              Hello
             </h1>
 
             {/* Tabs */}
