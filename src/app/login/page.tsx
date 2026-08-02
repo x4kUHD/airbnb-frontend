@@ -27,9 +27,7 @@ export default function LoginPage() {
             <BeloMark className="h-10 w-10" />
           </div>
 
-          <h1 className="pb-6 text-[22px] font-semibold leading-[26px] text-hof">
-            Welcome to Airbnb
-          </h1>
+          
 
           {/* Country + phone */}
           <div className="rounded-btn border border-[#b0b0b0]">
