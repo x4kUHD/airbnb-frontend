@@ -11,9 +11,9 @@ import SearchBar from "./SearchBar";
 export default function Navbar({ children }: { children?: React.ReactNode }) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-line bg-white">
-      <div className="mx-auto flex h-20 max-w-[2520px] items-center gap-4 px-6 sm:px-10 lg:px-20">
+      <div className="flex h-20 w-full items-center gap-4 px-6 sm:px-10 lg:px-20">
         {/* Left — logo */}
-        <div className="flex shrink-0 basis-0 justify-start lg:flex-1">
+        <div className="flex shrink-0 items-center justify-start">
           <Link href="/" aria-label="Airbnb homepage">
             <AirbnbLogo />
           </Link>
@@ -25,7 +25,7 @@ export default function Navbar({ children }: { children?: React.ReactNode }) {
         </div>
 
         {/* Right — host, locale, account */}
-        <div className="flex shrink-0 basis-0 items-center justify-end lg:flex-1">
+        <div className="flex shrink-0 items-center justify-end">
           <Link
             href="/login"
             className="hidden rounded-full px-4 py-3 text-sm font-medium text-hof transition-colors hover:bg-bg-muted xl:block"
