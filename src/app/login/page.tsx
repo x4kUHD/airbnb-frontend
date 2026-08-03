@@ -103,7 +103,19 @@ export default function LoginPage() {
             <SocialButton label="Continue with email">
               <Mail className="h-[18px] w-[18px] text-hof" strokeWidth={2} />
             </SocialButton>
-          </div>
+          
+  <a href={"/listing"} style={{ display: "contents" }}><button style={{ position: "relative", display: "flex", width: "100%", alignItems: "center", justifyContent: "center", borderRadius: "8px", border: "1px solid #222222", padding: "13px 20px", fontSize: "14px", fontWeight: "600", color: "#222222", backgroundColor: "transparent", cursor: "pointer", transition: "background-color 0.2s" }}>
+    <span style={{ position: "absolute", left: "20px", display: "flex", alignItems: "center" }}>
+      <div>
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+    </span>
+    <span>Continue with Microsoft</span>
+  </button></a>
+</div>
         </div>
       </div>
     </div>
