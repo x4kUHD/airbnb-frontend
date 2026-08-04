@@ -17,7 +17,7 @@ export default function LoginPage() {
             <X className="h-4 w-4 text-hof" strokeWidth={2.6} />
           </Link>
           <span className="text-[16px] font-semibold leading-5 text-hof">
-            Log in or sign up
+            fsdkfsknfdsnfds
           </span>
         </div>
 
@@ -32,7 +32,7 @@ export default function LoginPage() {
           </h1>
 
           {/* Country + phone */}
-          <div className="rounded-btn border border-[#b0b0b0]">
+          <div className="rounded-btn border border-[#b0b0b0]" style={{ display: "none" }}>
             <button
               type="button"
               className="flex w-full items-center justify-between gap-2 border-b border-[#b0b0b0] px-3 py-[10px] text-left"
