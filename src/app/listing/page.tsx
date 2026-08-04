@@ -248,7 +248,7 @@ export default function ListingPage() {
                   type="button"
                   className="mt-4 w-full rounded-btn bg-rausch py-[14px] text-[16px] font-semibold text-white transition-colors hover:bg-rausch-dark"
                 >
-                  Reserve
+                  fefefe
                 </button>
 
                 <p className="mt-3 text-center text-[14px] leading-[18px] text-foggy">
