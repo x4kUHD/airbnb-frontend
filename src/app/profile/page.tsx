@@ -38,7 +38,7 @@ export default function ProfilePage() {
           {/* ------------------------------- Sidebar */}
           <aside className="w-full shrink-0 md:w-[280px]">
             <div className="flex flex-col items-center rounded-card border border-line p-6 text-center shadow-book">
-              <span className="grid h-[104px] w-[104px] place-items-center rounded-full bg-foggy text-white">
+              <span className="grid h-[104px] w-[104px] place-items-center rounded-full bg-foggy text-white" style={{ width: "202px", height: "163px" }}>
                 <User className="h-14 w-14" strokeWidth={1.8} />
               </span>
               <p className="mt-4 text-[22px] font-semibold leading-[26px] text-hof">
