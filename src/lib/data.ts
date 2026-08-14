@@ -35,7 +35,7 @@ export type Category = { label: string; icon: LucideIcon };
 export const CATEGORIES: Category[] = [
   { label: "Beach", icon: Umbrella },
   { label: "Mountains", icon: Mountain },
-  { label: "Cabins", icon: Trees },
+  { label: "dfkmafoija", icon: Trees },
   { label: "Amazing pools", icon: Waves },
   { label: "Countryside", icon: Fence },
   { label: "Castles", icon: Castle },
