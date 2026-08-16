@@ -42,7 +42,7 @@ export default function ProfilePage() {
                 <User className="h-14 w-14" strokeWidth={1.8} />
               </span>
               <p className="mt-4 text-[22px] font-semibold leading-[26px] text-hof">
-                Brandon Kim
+                David Kim
               </p>
               <p className="mt-1 text-[14px] leading-[18px] text-foggy">
                 12 reviews · 6 years on Airbnb
