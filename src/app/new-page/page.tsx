@@ -37,7 +37,7 @@ export default function NewPagePage() {
         <div style={{ flex: "1", minWidth: "0" }}>
           <div style={{ border: "1px solid #DDDDDD", borderRadius: "12px", padding: "24px", marginBottom: "16px" }}>
             <h3 style={{ margin: "0 0 4px", fontSize: "16px", fontWeight: "600", lineHeight: "20px", color: "#222222" }}>Visit the Help Centre</h3>
-            <p style={{ margin: "0 0 12px", fontSize: "14px", lineHeight: "20px", color: "#717171" }}>Most questions are answered in our guides on cancellations, refunds and hosting.</p>
+            <p style={{ margin: "0 0 12px", fontSize: "14px", lineHeight: "20px", color: "#717171" }}>gfgffg'</p>
             <a style={{ fontSize: "14px", fontWeight: "600", color: "#222222", textDecoration: "underline" }} href={"#"}>Browse articles</a>
           </div>
           <div style={{ border: "1px solid #DDDDDD", borderRadius: "12px", padding: "24px", marginBottom: "16px" }}>
