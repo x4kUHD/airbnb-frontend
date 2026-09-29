@@ -11,7 +11,7 @@ export default function HomePage() {
         <CategoryBar />
       </Navbar>
 
-      <main className="mx-auto w-full max-w-[2520px] px-6 pb-16 pt-6 sm:px-10 lg:px-20">
+      <main className="mx-auto w-full max-w-[2520px] px-6 pb-16 pt-6 sm:px-10 lg:px-20" style={{ backgroundColor: "var(--color-bg)" }}>
         <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 xl:grid-cols-4">
           {LISTINGS.map((listing) => (
             <ListingCard key={listing.id} listing={listing} />
