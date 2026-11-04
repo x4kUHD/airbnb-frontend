@@ -26,7 +26,7 @@ export default function LogoutPage() {
               </div>
             </div>
             <h1 style={{"margin":"0","paddingBottom":"8px","fontSize":"22px","fontWeight":"600","lineHeight":"26px","color":"#222222"}}>
-              {"Log out of Airbnb?"}
+              {"Log out of Airbnb please?"}
             </h1>
             <p style={{"margin":"0","paddingBottom":"24px","fontSize":"14px","lineHeight":"20px","color":"#717171"}}>
               {"You'll need to log in again to manage your trips, messages and listings. Any dates you've selected but not booked won't be saved."}
