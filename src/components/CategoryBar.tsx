@@ -39,13 +39,13 @@ export default function CategoryBar() {
         })}
       </div>
 
-      <button
+      <a href={"/new-page"} style={{ display: "contents" }}><button
         type="button"
         className="flex shrink-0 items-center gap-2 rounded-btn border border-line px-4 py-3 text-[12px] font-semibold text-hof transition-colors hover:border-hof hover:bg-bg-muted"
       >
         <SlidersHorizontal className="h-4 w-4" strokeWidth={2} />
         Filters
-      </button>
+      </button></a>
     </div>
   );
 }
