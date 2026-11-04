@@ -60,7 +60,7 @@ export default function SearchPage() {
         </section>
 
         {/* Map */}
-        <aside className="hidden w-[38%] lg:block">
+        <aside className="hidden w-[38%] lg:block" style={{ height: "1990px", width: "363px" }}>
           <div
             className="sticky h-[var(--body-h)] w-full overflow-hidden bg-[#eae6df]"
             style={{ top: HEADER_H }}

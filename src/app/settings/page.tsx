@@ -1,7 +1,7 @@
 export default function SettingsPage() {
   return (
-    <main style={{ position: "relative" }}>
-      <div style={{"display":"flex","flexDirection":"column","minHeight":"100vh","fontFamily":"-apple-system, 'Segoe UI', Roboto, sans-serif","color":"#222222"}}>
+    <main style={{ position: "relative", backgroundColor: "#2563eb" }}>
+      <div style={{"display":"flex","flexDirection":"column","minHeight":"100vh","fontFamily":"-apple-system, 'Segoe UI', Roboto, sans-serif","color":"#222222","backgroundColor":"#2563eb"}}>
         <header style={{"borderBottom":"1px solid #dddddd","padding":"24px 80px"}}>
           <div style={{"fontSize":"24px","fontWeight":"700","color":"#ff385c"}}>
             {"airbnb"}
